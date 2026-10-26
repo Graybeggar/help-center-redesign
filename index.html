@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Help Center</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="hero">
+  <h1>How can we help?</h1>
+  <p class="hero-sub">Search first. Most answers take under a minute.</p>
+  <label class="search-label" for="search">Search help articles</label>
+  <input id="search" type="search" placeholder="Try &quot;charged twice&quot; or &quot;reset password&quot;" autocomplete="off">
+</header>
+
+<nav class="categories" aria-label="Help categories">
+  <button type="button" class="cat is-active" data-cat="All">All topics</button>
+  <button type="button" class="cat" data-cat="Billing">Billing</button>
+  <button type="button" class="cat" data-cat="Login">Login &amp; access</button>
+  <button type="button" class="cat" data-cat="Account">Account</button>
+  <button type="button" class="cat" data-cat="Troubleshooting">Troubleshooting</button>
+</nav>
+
+<main id="articles" class="articles" aria-live="polite"></main>
+
+<p id="no-results" class="no-results" hidden>
+  Nothing matches that search yet. Try a shorter word, or
+  <a href="#contact">contact us</a> and we will sort it out with you.
+</p>
+
+<footer id="contact" class="contact">
+  <h2>Still stuck?</h2>
+  <p>Send us a message with your account email and a short description of the problem.
+  We reply within one business day, and urgent billing issues are answered first.</p>
+  <a class="contact-btn" href="mailto:support@example.com">Contact support</a>
+  <p class="before-link">Curious what this page replaced? <a href="before.html">See the old version</a>.</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
